@@ -1,16 +1,43 @@
-# user_bloc
+user_bloc
 
-A new Flutter project.
+A Flutter app demonstrating user management with clean architecture, BLoC state management, and API integration.
 
-## Getting Started
+Getting Started
 
-This project is a starting point for a Flutter application.
+This project connects to the DummyJSON API to display a list of users with infinite scrolling and search features. Tapping a user shows their details, posts, and todos. You can also add a new post locally.
 
-A few resources to get you started if this is your first Flutter project:
+Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+List users with avatar, name, and email
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Infinite scroll with pagination (limit/skip)
+
+Real-time search by name
+
+View user details with posts and todos
+
+Create a new post locally (title and body)
+
+Handles loading, success, and error states using flutter_bloc
+
+
+API Endpoints
+
+Users: https://dummyjson.com/users
+
+Posts: https://dummyjson.com/posts/user/{userId}
+
+Todos: https://dummyjson.com/todos/user/{userId}
+
+
+Learn More
+
+A few resources to get you started with Flutter:
+
+Lab: Write your first Flutter app
+
+Cookbook: Useful Flutter samples
+
+Flutter documentation – tutorials, samples, mobile development guidance, and API reference.
+
+
